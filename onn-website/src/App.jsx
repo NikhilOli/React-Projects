@@ -17,6 +17,7 @@ const App = () => {
       <Support />
       <Pricing />
       <Footer />
+      <Hello />
     </div>
   )
 }
