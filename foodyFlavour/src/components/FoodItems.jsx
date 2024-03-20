@@ -4,11 +4,11 @@ import FoodData from './FoodData'
 
 const FoodItems = () => {
     return (
-        <div className='flex gap-6 flex-wrap justify-center'>
+        <div className='flex gap-10 flex-wrap justify-center'>
             {
-                FoodData.map(({ id,name, img, desc, price, rating }) => (
-                    <FoodCart key={id} name={name} img={img} desc ={desc} price={price} rating={rating} />
-                ))
+                FoodData.map((food) => {
+                    return    <FoodCart key={food.id} name={food.name} img={food.img} desc={food.desc} price={food.price} rating={food.rating} />
+                })
             }
             <FoodCart />
         </div>
