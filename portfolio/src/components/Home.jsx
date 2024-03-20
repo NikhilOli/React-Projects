@@ -14,7 +14,7 @@ const Home = () => {
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem illo ut accusantium distinctio laboriosam asperiores, pariatur eaque expedita neque voluptatibus iure reprehenderit velit officiis voluptas quia voluptates, aliquam commodi enim?
                     </p>
                     <div>
-                        <button className='group w-fit gap-1 my-2 cursor-pointer flex items-center text-white py-3 px-6 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-md'>
+                        <button className='group w-fit gap-1 my-2 cursor-pointer flex items-center text-white py-3 px-6 bg-gradient-to-r from-cyan-500 to-green-500 rounded-md'>
                             Portfolio
                             <span className='group-hover:rotate-90 duration-300'>
                                 <FaArrowRight size={18} />

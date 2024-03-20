@@ -20,7 +20,7 @@ const Experince = () => {
             id: 2,
             src: css,
             title: "CSS",
-            style: 'shadow-blue-400'
+            style: 'shadow-green-400'
         },
         {
             id: 3,

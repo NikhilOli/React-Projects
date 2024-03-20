@@ -77,7 +77,7 @@ const App = () => {
           />
           <button
             onClick={handleSearch}
-            className="bg-blue-500 text-white px-4 py-2 rounded"
+            className="bg-green-500 text-white px-4 py-2 rounded"
           >
             Search
           </button>
@@ -91,7 +91,7 @@ const App = () => {
             <p className="text-lg text-gray-600 mb-6">{weatherData.weather[0].description}</p>
             <div className="flex justify-center space-x-4">
               <div className="flex items-center">
-                <span className="w-8 h-8 bg-blue-500 rounded-full inline-flex items-center justify-center text-white font-bold">
+                <span className="w-8 h-8 bg-green-500 rounded-full inline-flex items-center justify-center text-white font-bold">
                   H
                 </span>
                 <p className="text-gray-600 ml-2">{`Humidity: ${weatherData.main.humidity} %`}</p>
