@@ -1,5 +1,6 @@
 import React from 'react'
 import { MdClose } from "react-icons/md";
+import CartItem from './CartItem';
 
 
 const Cart = () => {
@@ -10,6 +11,8 @@ const Cart = () => {
                     <h2 className='text-3xl lg:text-xl font-bold'>My Order</h2>
                     <MdClose className='cursor-pointer border-2 rounded-md border-wood hover:bg-green hover:text-white hover:border-none text-3xl lg:text-xl' />
                 </div>
+
+                <CartItem />
 
                 <div className='absolute bottom-0'>
                     <h1 className='font-semibold '>Items:</h1>
