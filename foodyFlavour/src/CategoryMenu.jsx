@@ -8,7 +8,7 @@ const CategoryMenu = () => {
     { id: 5, title: 'Snacks' }
     ]
     return (
-        <div className='my-5 text-center lg:text-left'>
+        <div className='text-center lg:text-left lg:ml-5'>
             <h3 className='font-semibold text-xl'>Find the best foods</h3>
             <div className='flex gap-5 py-2 justify-center lg:justify-start'>
                 {menus.map(({ id, title }) => (
