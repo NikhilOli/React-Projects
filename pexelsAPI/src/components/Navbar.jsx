@@ -3,18 +3,18 @@ import { IoLogIn } from 'react-icons/io5';
 import { CgProfile } from 'react-icons/cg';
 import { MdDownloadForOffline } from 'react-icons/md';
 import { FiSearch } from "react-icons/fi";
-import Button from './Button';
-const Navbar = () => {
+const Navbar = ({ setSearch }) => {
     return (
         <>
             <nav className='flex justify-between items-center bg-pink text-white p-4'>
-                <h1 className='text-2xl font-bold'>PexelsImage</h1>
+                <h1 className='text-2xl font-bold'>ImageSnap</h1>
                 <ul className='flex space-x-4'>
                     <li>Home</li>
                     <li>Explore</li>
                 </ul>
                 <div className='flex justify-center items-center'>
                     <input
+                        onChange={(e) => setSearch(e.target.value)}
                         type='search'
                         placeholder='Search Photos'
                         className='p-2 rounded-md w-[40vw] text-black outline-aqua rounded-tr-none rounded-br-none'
