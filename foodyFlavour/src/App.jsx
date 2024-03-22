@@ -18,7 +18,7 @@ const App = () => {
 }
 const Error = () => {
   return (
-    <div>
+    <div className='text-center'>
       <h1>404: No Result Found</h1>
     </div>
   )

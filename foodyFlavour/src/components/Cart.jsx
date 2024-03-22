@@ -25,7 +25,7 @@ const Cart = () => {
                     <button className='w-[90vw] lg:w-[18vw] mb-5 font-bold px-3 text-white py-2 rounded-lg bg-wood'>Checkout</button>
                 </div>
             </div>
-            <FaCartShopping onClick={() => setActiveCart(!activeCart)} className='bg-white rounded-full text-4xl p-2 fixed bottom-4 right-3    ' />
+            <FaCartShopping onClick={() => setActiveCart(!activeCart)} className='bg-white rounded-full text-wood cursor-pointer text-4xl p-2 fixed bottom-4 right-3    ' />
         </>
     )
 }
