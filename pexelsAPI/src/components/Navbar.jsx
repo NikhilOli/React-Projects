@@ -3,13 +3,15 @@ import { IoLogIn } from 'react-icons/io5';
 import { CgProfile } from 'react-icons/cg';
 import { MdDownloadForOffline } from 'react-icons/md';
 import { FiSearch } from "react-icons/fi";
+import { useNavigate } from 'react-router-dom';
 const Navbar = ({ setSearch }) => {
+    const navigate = useNavigate();
     return (
         <>
             <nav className='flex justify-between items-center bg-pink text-white p-4'>
-                <h1 className='text-2xl font-bold'>ImageSnap</h1>
-                <ul className='flex space-x-4'>
-                    <li>Home</li>
+                <h1 onClick={() => navigate('/')} className='text-2xl font-bold cursor-pointer'>ImageSnap</h1>
+                <ul className='flex space-x-4 cursor-pointer'>
+                    <li onClick={() => navigate('/')}>Home</li>
                     <li>Explore</li>
                 </ul>
                 <div className='flex justify-center items-center'>
@@ -24,7 +26,7 @@ const Navbar = ({ setSearch }) => {
                 </div>
                 <div className='flex space-x-4'>
                     <CgProfile className='text-3xl cursor-pointer hover:text-black transition-all duration-500' />
-                    <MdDownloadForOffline className='text-3xl cursor-pointer hover:text-black transition-all duration-500' />
+                    <MdDownloadForOffline className='text-3xl cursor-pointer hover:text-black transition-all duration-500' onClick={() => navigate('/saved')} />
                     <IoLogIn className='text-3xl cursor-pointer hover:text-black transition-all duration-500' />
                 </div>
             </nav>
@@ -38,7 +40,6 @@ const Navbar = ({ setSearch }) => {
                 <button className={`bg-indigo-400 text-white py-2 px-4 rounded`} onClick={() => setSearch("Technology")}> Technology </button>
                 <button className={`bg-purple-400 text-white py-2 px-4 rounded`} onClick={() => setSearch("Art")}> Art </button>
                 <button className={`bg-violet-400 text-white py-2 px-4 rounded`} onClick={() => setSearch("Fashion")}> Fashion </button>
-                <button className={`bg-teal-400 text-white py-2 px-4 rounded`} onClick={() => setSearch("Architecture")}> Architecture </button>
             </div>
         </>
     );
