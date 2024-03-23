@@ -22,8 +22,20 @@ const App = () => {
       setImages(response.data.photos);
       setLoader(false);
     }
+    const data = JSON.parse(localStorage.getItem('Images'))
+    if (data) {
+      setSaved(data);
+    }
     fetchImage();
   }, [search])
+
+  useEffect(() => {
+    if (saved.length != 0) {
+      const json = JSON.stringify(saved);
+      localStorage.setItem('Images', json)
+    }
+  }, [saved])
+
 
   return (
     <>
@@ -31,7 +43,7 @@ const App = () => {
         <Navbar setSearch={setSearch} saved={saved} />
         <Routes>
           <Route path='/' element={<Home images={images} loader={loader} saved={saved} setSaved={setSaved} />} />
-          <Route path='/*' element={<Saved saved={saved} />} />
+          <Route path='/*' element={<Saved saved={saved} setSaved={setSaved}/>} />
           <Route path='/*' element={<Error />} />
         </Routes>
       </BrowserRouter>
