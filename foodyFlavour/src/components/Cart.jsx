@@ -2,10 +2,13 @@ import React, { useState } from 'react'
 import { MdClose } from "react-icons/md";
 import { FaCartShopping } from "react-icons/fa6";
 import CartItem from './CartItem';
+import { useSelector } from 'react-redux';
+
 
 
 const Cart = () => {
     const [activeCart, setActiveCart] = useState(true);
+    const cartItems = useSelector((s) =>s.cart)
     return (
         <>
             <div className={`w-full lg:w-[20vw] h-full p-5 bg-white fixed top-0 right-0 z-50 ${activeCart ? 'translate-x-0' : 'translate-x-full'} transition-all duration-500 ease-in`}>
@@ -14,9 +17,11 @@ const Cart = () => {
                     <MdClose onClick={() => setActiveCart(!activeCart)} className='cursor-pointer border-2 rounded-md border-wood hover:bg-green hover:text-white hover:border-none text-3xl lg:text-xl' />
                 </div>
 
-                <CartItem />
-                <CartItem />
-                <CartItem />
+                {
+                    cartItems.map((item, index) => (
+                        <CartItem key={item.id || index} id={item.id} name={item.name} img={item.img} desc={item.desc} price={item.price} rating={item.rating} />
+                    ))
+                }
 
                 <div className='absolute bottom-0'>
                     <h1 className='font-semibold '>Items:</h1>

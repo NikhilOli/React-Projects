@@ -1,19 +1,22 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './Home'
+import {Provider} from 'react-redux'
+import store from './store/store'
 
 
 const App = () => {
   return (
-    <div>
+    <>
+      <Provider store={store}>
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/*' element={<Error />} />
         </Routes>
       </BrowserRouter>
-
-    </div>
+      </Provider>
+    </>
   )
 }
 const Error = () => {
