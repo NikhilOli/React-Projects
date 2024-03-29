@@ -36,29 +36,10 @@ const App = () => {
   const handleSearch = () => {
     weatherApi(searchQuery);
     setSearchQuery('');
-  }
-
-  // const getBackgroundImage = () => {
-  //   if (!weatherData) return '';
-
-  //     const weatherCondition = weatherData.condition.toLowerCase();
-
-  //   switch (weatherCondition) {
-  //     case 'hot':
-  //       return 'hot-bg-image.jpg'; // Replace with your hot background image
-  //     case 'cold':
-  //       return 'https://source.unsplash.com/1600x900/?cold'; // Random cold place image from Unsplash
-  //     case 'rainy':
-  //       return 'rainy-bg-image.jpg'; // Replace with your rainy background image
-  //     default:
-  //       return 'default-bg-image.jpg'; // Replace with a default background image
-  //   }
-  // };
+  } 
 
   const changeTheme = (theme) => {
-    // Implement logic to change the theme based on user preference
-    // For demonstration purposes, I'm just updating the background color
-    document.body.style.backgroundColor = theme === 'dark' ? '#333' : '#fff';
+    document.body.style.backgroundColor = theme === 'dark' ? '#434343' : '#fff';
   };
 
   return (
@@ -108,7 +89,7 @@ const App = () => {
       </div>
       <div className="mt-4">
         <label className="mr-2">Select Theme:</label>
-        <select onChange={(e) => changeTheme(e.target.value)}>
+        <select className='focus:outline-none' onChange={(e) => changeTheme(e.target.value)}>
           <option value="light">Light</option>
           <option value="dark">Dark</option>
         </select>

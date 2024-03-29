@@ -1,33 +1,38 @@
 import React from 'react'
-import arrayDestruct from "../assets/portfolio/arrayDestruct.jpg";
-import installNode from "../assets/portfolio/installNode.jpg";
-import navbar from "../assets/portfolio/navbar.jpg";
+import imageSnap from "../assets/portfolio/imageSnap.png";
+import eCommerce from "../assets/portfolio/eCommerce.png";
+import framer from "../assets/portfolio/framer.png";
 import reactParallax from "../assets/portfolio/reactParallax.jpg";
-import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
-import reactWeather from "../assets/portfolio/reactWeather.jpg";
+import onn from "../assets/portfolio/onn.png";
+import weatherApp from "../assets/portfolio/weatherApp.png";
 
 const PortfolioSection = () => {
 
     const portfolios = [
         {
             id: 1,
-            src: reactWeather
+            src: imageSnap,
+            demoLink: "https://image-snap.vercel.app/"
         },
         {
             id: 2,
-            src: arrayDestruct
+            src: eCommerce,
+            demoLink: "https://e-commerce-five-plum.vercel.app/"
         },
         {
             id: 3,
-            src: reactSmooth
+            src: onn,
+            demoLink: "https://react-projects-coral.vercel.app/"
         },
         {
             id: 4,
-            src: navbar
+            src: framer,
+            demoLink: "https://framer-portfolio-ten.vercel.app/"
         },
         {
             id: 5,
-            src: installNode
+            src: weatherApp,
+            demoLink: "https://weatheringai.netlify.app/"
         },
         {
             id: 6,
@@ -45,13 +50,13 @@ const PortfolioSection = () => {
 
                 <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:p-0'>
 
-                    {portfolios.map(({id,src}) => (
-                        
+                    {portfolios.map(({ id, src, demoLink }) => (
+
                         <div key={id} className='shadow-md shadow-gray-600 rounded-lg'>
-                            <img src={src} alt="" className='rounded-md duration-200 hover:scale-105' />
+                            <img src={src} alt="" className='h-44 w-full rounded-md duration-200 hover:scale-105' />
 
                             <div className='flex justify-center items-center'>
-                                <button className=' m-4 px-6 py-3 w-1/2 duration-200 hover:scale-105'>Demo</button>
+                                <button className=' m-4 px-6 py-3 w-1/2 duration-200 hover:scale-105'><a href={demoLink} target='_blank'>Demo</a></button>
                                 <button className=' m-4 px-6 py-3 w-1/2 duration-200 hover:scale-105'>Code</button>
                             </div>
                         </div>
