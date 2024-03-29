@@ -36,7 +36,7 @@ const App = () => {
   const handleSearch = () => {
     weatherApi(searchQuery);
     setSearchQuery('');
-  } 
+  }
 
   const changeTheme = (theme) => {
     document.body.style.backgroundColor = theme === 'dark' ? '#434343' : '#fff';

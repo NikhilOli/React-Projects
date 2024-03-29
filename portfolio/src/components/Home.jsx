@@ -11,7 +11,7 @@ const Home = () => {
                         I'm a Frontend Developer.
                     </h2>
                     <p className='text-gray-500 py-4 max-w-md'>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem illo ut accusantium distinctio laboriosam asperiores, pariatur eaque expedita neque voluptatibus iure reprehenderit velit officiis voluptas quia voluptates, aliquam commodi enim?
+                        Hello! I'm Nikhil Oli, a Frontend Developer specializing in creating user-friendly web experiences. With proficiency in HTML, CSS, JavaScript, and ReactJS, I excel in transforming concepts into elegant and responsive applications. Let's collaborate to elevate your digital presence and captivate your audience.
                     </p>
                     <div>
                         <button className='group w-fit gap-1 my-2 cursor-pointer flex items-center text-white py-3 px-6 bg-gradient-to-r from-cyan-500 to-green-500 rounded-md'>

@@ -3,8 +3,7 @@ import html from "../assets/html.png";
 import css from "../assets/css.png";
 import javascript from "../assets/javascript.png";
 import reactImage from "../assets/react.png";
-import nextjs from "../assets/nextjs.png";
-import graphql from "../assets/graphql.png";
+import framer from "../assets/framer.png"
 import github from "../assets/github.png";
 import tailwind from "../assets/tailwind.png";
 
@@ -34,12 +33,12 @@ const Experince = () => {
             title: "React",
             style: 'shadow-sky-400'
         },
-        {
-            id: 5,
-            src: nextjs,
-            title: "NextJS",
-            style: 'shadow-green-400'
-        },
+        // {
+        //     id: 5,
+        //     src: nextjs,
+        //     title: "NextJS",
+        //     style: 'shadow-green-400'
+        // },
         {
             id: 6,
             src: tailwind,
@@ -54,8 +53,8 @@ const Experince = () => {
         },
         {
             id: 8,
-            src: graphql,
-            title: "GraphQL",
+            src: framer,
+            title: "Framer-Motion",
             style: 'shadow-indigo-400'
         },
     ]

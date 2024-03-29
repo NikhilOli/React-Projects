@@ -1,6 +1,30 @@
 import React from 'react'
 
 const Contact = () => {
+    const [result, setResult] = React.useState("");
+
+    const onSubmit = async (event) => {
+        event.preventDefault();
+        setResult("Sending....");
+        const formData = new FormData(event.target);
+
+        formData.append("access_key", "7ddd1c46-075b-43cb-ba50-93c2aa273a54");
+
+        const response = await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            body: formData
+        });
+
+        const data = await response.json();
+
+        if (data.success) {
+            setResult("Form Submitted Successfully");
+            event.target.reset();
+        } else {
+            console.log("Error", data);
+            setResult(data.message);
+        }
+    };
     return (
         <div
             name="contact"
@@ -16,16 +40,18 @@ const Contact = () => {
 
                 <div className=" flex justify-center items-center">
                     <form
-
+                        onSubmit={onSubmit}
                         className=" flex flex-col w-full md:w-1/2"
                     >
                         <input
+                            autoComplete='off'
                             type="text"
                             name="name"
                             placeholder="Enter your name"
                             className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
                         />
                         <input
+                            autoComplete='off'
                             type="text"
                             name="email"
                             placeholder="Enter your email"
@@ -43,6 +69,7 @@ const Contact = () => {
                         </button>
                     </form>
                 </div>
+                <span className='text-center'>{result}</span>
             </div>
         </div>
     );

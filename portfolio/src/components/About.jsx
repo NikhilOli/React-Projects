@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const About = () => {
     return (
@@ -9,15 +9,15 @@ const About = () => {
                 </div>
 
                 <p className='text-xl mt-20'>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel obcaecati minima, dolorem ducimus sed porro temporibus enim deleniti ipsam quas earum tempora architecto aliquid aperiam quia voluptatum, laborum delectus quis! Commodi voluptas accusantium beatae laborum quo atque tempore. Laborum, officia officiis natus omnis quo praesentium quos tenetur alias. Distinctio, fugit?
+                    I am a driven and dedicated Frontend Developer with a passion for creating captivating digital experiences. My journey began with a love for technology and design, leading me to specialize in HTML, CSS, JavaScript, and ReactJS. With a keen eye for detail and a commitment to excellence, I strive to craft user-friendly and visually stunning applications that leave a lasting impression.
                 </p>
                 <br />
                 <p className='text-xl'>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus autem tenetur vel, ea aut ut dolor repudiandae perspiciatis quo aliquid dolorem enim ipsum molestiae, totam numquam assumenda. Eius fugit et sapiente voluptates illum ratione! Exercitationem explicabo deserunt fuga reprehenderit eius at asperiores cupiditate nostrum illum dolores, dolorem magni inventore quos?
+                    My approach to development is rooted in continuous learning and adaptability. I thrive in collaborative environments where I can leverage my skills to solve complex problems and bring innovative ideas to life. Whether it's building intuitive user interfaces or optimizing performance, I am dedicated to delivering high-quality solutions that exceed expectations.
                 </p>
             </div>
         </div>
     )
 }
 
-export default About
+export default About;

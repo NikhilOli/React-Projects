@@ -2,7 +2,7 @@ import React from 'react'
 import imageSnap from "../assets/portfolio/imageSnap.png";
 import eCommerce from "../assets/portfolio/eCommerce.png";
 import framer from "../assets/portfolio/framer.png";
-import reactParallax from "../assets/portfolio/reactParallax.jpg";
+import reduxEcommerce from "../assets/portfolio/reduxEcommerce.png";
 import onn from "../assets/portfolio/onn.png";
 import weatherApp from "../assets/portfolio/weatherApp.png";
 
@@ -16,8 +16,8 @@ const PortfolioSection = () => {
         },
         {
             id: 2,
-            src: eCommerce,
-            demoLink: "https://e-commerce-five-plum.vercel.app/"
+            src: reduxEcommerce,
+            demoLink: "https://redux-ecommerce-ten.vercel.app/"
         },
         {
             id: 3,
@@ -36,7 +36,8 @@ const PortfolioSection = () => {
         },
         {
             id: 6,
-            src: reactParallax
+            src: eCommerce,
+            demoLink: "https://e-commerce-five-plum.vercel.app/"
         },
     ]
 
