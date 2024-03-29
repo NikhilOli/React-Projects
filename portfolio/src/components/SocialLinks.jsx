@@ -33,7 +33,7 @@ const SocialLinks = () => {
         child: (
             <>Resume <BsFillPersonLinesFill size={30} /></>
         ),
-        href: '#',
+        href: 'https://drive.google.com/drive/folders/1BqJvZAfvzSgP0ZVa60ToB6UHtCR2b4x9?usp=sharing',
         style: 'rounded-br-md'
     }
     ]
