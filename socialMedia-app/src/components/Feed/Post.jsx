@@ -13,7 +13,6 @@ const Post = ({ like, desc, photo, comment, postId, date }) => {
         setLikeCount(
             isLike ? likeCount + 1 : likeCount - 1);
         setIsLike(!isLike);
-        console.log("Liked");
     }
     return (
         <div className='rounded-md w-full my-7'>

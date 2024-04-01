@@ -5,8 +5,6 @@ import { BiSolidTagAlt } from "react-icons/bi";
 import { RiLiveFill } from "react-icons/ri";
 
 
-
-
 const Share = () => {
     return (
         <div>
