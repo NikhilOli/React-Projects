@@ -1,5 +1,5 @@
 import React from 'react'
-import profileImg from '../../assets/person/1.jpeg'
+import profileImg from '../../../public/assets/person/1.jpeg'
 import { MdPermMedia, MdOutlineEmojiEmotions } from "react-icons/md";
 import { BiSolidTagAlt } from "react-icons/bi";
 import { RiLiveFill } from "react-icons/ri";

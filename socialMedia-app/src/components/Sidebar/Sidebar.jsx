@@ -4,10 +4,9 @@ import { FaMessage, FaCirclePlay, FaUserGroup } from "react-icons/fa6";
 import { IoBookmarkSharp } from "react-icons/io5";
 import { FaRegQuestionCircle } from "react-icons/fa";
 import { RiGraduationCapFill } from "react-icons/ri";
-import friend from '../../assets/person/2.jpeg'
+import friend from '../../../public/assets/person/2.jpeg'
 import './Sidebar.css'
-
-
+import { Users } from '../../dummyData'
 
 
 
@@ -56,50 +55,14 @@ const Sidebar = () => {
                 <button className='w-[150px] border-none p-[10px] rounded font-light bg-[#303030]'>Show More</button>
                 <hr className='my-5' />
                 <ul>
-                    <li className='flex items-center mb-[15px]'>
-                        <img className='w-8 h-8 rounded-full object-cover mr-[10px]' src={friend} alt="" />
-                        <span>John Doe</span>
-                    </li>
-                    <li className='flex items-center mb-[15px]'>
-                        <img className='w-8 h-8 rounded-full object-cover mr-[10px]' src={friend} alt="" />
-                        <span>John Doe</span>
-                    </li>
-                    <li className='flex items-center mb-[15px]'>
-                        <img className='w-8 h-8 rounded-full object-cover mr-[10px]' src={friend} alt="" />
-                        <span>John Doe</span>
-                    </li>
-                    <li className='flex items-center mb-[15px]'>
-                        <img className='w-8 h-8 rounded-full object-cover mr-[10px]' src={friend} alt="" />
-                        <span>John Doe</span>
-                    </li>
-                    <li className='flex items-center mb-[15px]'>
-                        <img className='w-8 h-8 rounded-full object-cover mr-[10px]' src={friend} alt="" />
-                        <span>John Doe</span>
-                    </li>
-                    <li className='flex items-center mb-[15px]'>
-                        <img className='w-8 h-8 rounded-full object-cover mr-[10px]' src={friend} alt="" />
-                        <span>John Doe</span>
-                    </li>
-                    <li className='flex items-center mb-[15px]'>
-                        <img className='w-8 h-8 rounded-full object-cover mr-[10px]' src={friend} alt="" />
-                        <span>John Doe</span>
-                    </li>
-                    <li className='flex items-center mb-[15px]'>
-                        <img className='w-8 h-8 rounded-full object-cover mr-[10px]' src={friend} alt="" />
-                        <span>John Doe</span>
-                    </li>
-                    <li className='flex items-center mb-[15px]'>
-                        <img className='w-8 h-8 rounded-full object-cover mr-[10px]' src={friend} alt="" />
-                        <span>John Doe</span>
-                    </li>
-                    <li className='flex items-center mb-[15px]'>
-                        <img className='w-8 h-8 rounded-full object-cover mr-[10px]' src={friend} alt="" />
-                        <span>John Doe</span>
-                    </li>
-                    <li className='flex items-center mb-[15px]'>
-                        <img className='w-8 h-8 rounded-full object-cover mr-[10px]' src={friend} alt="" />
-                        <span>John Doe</span>
-                    </li>
+                    {
+                        Users.map((user) => (
+                            <li key={user.id} className='flex items-center mb-[15px]'>
+                                <img className='w-8 h-8 rounded-full object-cover mr-[10px]' src={user.profilePicture} alt="" />
+                                <span>{user.username}</span>
+                            </li>
+                        ))
+                    }
                 </ul>
             </div>
         </div>

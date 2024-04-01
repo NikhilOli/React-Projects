@@ -1,12 +1,12 @@
 import React from 'react'
 import { IoSearch, IoPerson, IoNotifications } from "react-icons/io5";
 import { FaMessage } from "react-icons/fa6";
-import profilePic from '../../assets/person/1.jpeg';
+import profilePic from '../../../public/assets/person/1.jpeg';
 
 
 const Topbar = () => {
   return (
-    <div className='w-full h-14  flex items-center top-0 sticky bg-[#212121]'>
+    <div className='w-full h-14  flex items-center top-0 sticky bg-[#212121] z-50 '>
       <div className="topleft basis-1/6">
         <h2 className='text-2xl font-extrabold ml-6 cursor-pointer'>SocialConnect</h2>
       </div>
