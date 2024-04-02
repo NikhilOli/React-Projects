@@ -5,12 +5,12 @@ import Rightbar from '../components/Rightbar'
 import CoverImg from '../../public/assets/post/3.jpeg'
 import ProfileImg from '../../public/assets/person/7.jpeg'
 
-const Home = () => {
+const Profile = () => {
     return (
         <div className='flex w-full'>
             <Sidebar />
 
-            <div className="profileRight w-full">
+            <div className="profileRight w-full flex justify-center">
                 <div className="profilrRightTop ">
                     <div className="profileCover h-[320px] relative ">
                         <img className='w-full h-[250px] object-cover' src={CoverImg} alt="" />
@@ -21,13 +21,13 @@ const Home = () => {
                         <h4 className='font-light'>Hi! I am a Frontend Developer.</h4>
                     </div>
                 </div>
-                <div className="profileRightBottom flex ">
+                <div className="profileRightBottom flex">
                     <Feed />
-                    <Rightbar />
+                    <Rightbar profile />
                 </div>
             </div>
         </div>
     )
 }
 
-export default Home
+export default Profile

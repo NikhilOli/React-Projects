@@ -5,10 +5,12 @@ import Rightbar from '../components/Rightbar'
 
 const Home = () => {
     return (
-        <div className='flex w-full '>
+        <div className='flex w-full'>
             <Sidebar />
-            <Feed />
-            <Rightbar />
+            <div className='flex justify-around'>
+                <Feed />
+                <Rightbar />
+            </div>
         </div>
     )
 }

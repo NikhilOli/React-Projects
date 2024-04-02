@@ -10,8 +10,11 @@ const Post = ({ like, desc, photo, comment, postId, date }) => {
     const [isLike, setIsLike] = useState(false);
 
     const handleLike = () => {
-        setLikeCount(
-            isLike ? likeCount + 1 : likeCount - 1);
+        if (!isLike) {
+            setLikeCount(likeCount + 1);
+        } else {
+            setLikeCount(likeCount - 1);
+        }
         setIsLike(!isLike);
     }
     return (
