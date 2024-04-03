@@ -6,8 +6,13 @@ import reactImage from "../assets/react.png";
 import framer from "../assets/framer.png"
 import github from "../assets/github.png";
 import tailwind from "../assets/tailwind.png";
+import {motion} from 'framer-motion'
 
 const Experince = () => {
+    const iconVariations = (delay) => ({
+        initial: { y: 0 },
+        animate: { y: [-10, 10], transition: { duration: 2, ease: "linear", repeat: Infinity, repeatType: "reverse", delay: delay } }
+    })
     const technologies = [
         {
             id: 1,
@@ -69,10 +74,13 @@ const Experince = () => {
                 <div className='w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0'>
                     {technologies.map(({ id, src, title, style }) => (
 
-                        <div key={id} className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg` + " " + style}>
+                        <motion.div 
+                        variants={iconVariations(1)}
+                    initial="initial"
+                    animate="animate" key={id} className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg` + " " + style}>
                             <img src={src} className='w-20 mx-auto' alt="" />
                             <p className='mt-4'>{title}</p>
-                        </div>
+                        </motion.div>
                     ))}
                 </div>
             </div>

@@ -1,10 +1,15 @@
 import React from 'react'
 import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
+import { motion } from 'framer-motion'
 
 
 
 const SocialLinks = () => {
+    const container = (delay) => ({
+        hidden: { x: -100, opacity: 0 },
+        visible: { x: 0, opacity: 1, transition: { duration: 2.5, delay: delay } }
+    });
     const links = [{
         id: 101,
         child: (
@@ -39,7 +44,9 @@ const SocialLinks = () => {
     ]
     return (
         <div className=' lg:flex left-0 top-[35%] flex-col fixed'>
-            <ul>
+            <motion.ul variants={container(0)}
+                initial="hidden"
+                animate="visible">
                 {links.map(({ id, child, style, href }) => (
 
                     <li key={id} className={'w-40 h-14 px-4 flex justify-between items-center ml-[-100px] bg-gray-500 hover:ml-[-10px] hover:rounded-md duration-300' + " " + style}>
@@ -48,7 +55,7 @@ const SocialLinks = () => {
                         </a>
                     </li>
                 ))}
-            </ul>
+            </motion.ul>
         </div>
     )
 }
