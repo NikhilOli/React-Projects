@@ -15,7 +15,7 @@ const SocialLinks = () => {
         child: (
             <>LinkedIn <FaLinkedin size={30} /></>
         ),
-        href: 'linkedin.com/in/nikhil-oli',
+        href: 'https://linkedin.com/in/nikhil-oli',
         style: 'rounded-tr-md'
     },
     {
