@@ -31,7 +31,7 @@ const SocialLinks = () => {
         child: (
             <>Instagram <FaInstagram size={30} /></>
         ),
-        href: 'https://instagram.com',
+        href: 'https://instagram.com/ankeet_oli',
     },
     {
         id: 104,
