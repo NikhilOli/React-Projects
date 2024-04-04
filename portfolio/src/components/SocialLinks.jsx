@@ -23,7 +23,7 @@ const SocialLinks = () => {
         child: (
             <>Github <FaGithub size={30} /></>
         ),
-        href: 'https://github.com/NikhilOli107',
+        href: 'https://github.com/NikhilOli',
 
     },
     {
