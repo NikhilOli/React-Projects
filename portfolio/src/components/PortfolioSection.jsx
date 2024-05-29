@@ -26,7 +26,7 @@ const PortfolioSection = () => {
             id: 3,
             title: "Contact Management System",
             src: contactms,
-            demoLink: "https://contactms-demo.vercel.app/"
+            demoLink: "https://contactms.vercel.app/"
         },
         {
             id: 4,
