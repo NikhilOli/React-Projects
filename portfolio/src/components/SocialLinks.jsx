@@ -4,7 +4,6 @@ import { BsFillPersonLinesFill } from "react-icons/bs";
 import { motion } from 'framer-motion'
 
 
-
 const SocialLinks = () => {
     const container = (delay) => ({
         hidden: { x: -100, opacity: 0 },
@@ -38,7 +37,7 @@ const SocialLinks = () => {
         child: (
             <>Resume <BsFillPersonLinesFill size={30} /></>
         ),
-        href: 'https://drive.google.com/drive/folders/1BqJvZAfvzSgP0ZVa60ToB6UHtCR2b4x9?usp=sharing',
+        href: 'https://drive.google.com/uc?export=download&id=1n_3CqPK1bLEGgT4NiOD0LqDxnZ66bVMp',
         style: 'rounded-br-md'
     }
     ]

@@ -4,8 +4,10 @@ import css from "../assets/css.png";
 import javascript from "../assets/javascript.png";
 import reactImage from "../assets/react.png";
 import framer from "../assets/framer.png"
-import github from "../assets/github.png";
 import tailwind from "../assets/tailwind.png";
+import express from "../assets/expressjs.png"
+import node from "../assets/node.png"
+import mongo from "../assets/mongo.png"
 import {motion} from 'framer-motion'
 
 const Experince = () => {
@@ -38,26 +40,32 @@ const Experince = () => {
             title: "React",
             style: 'shadow-sky-400'
         },
-        // {
-        //     id: 5,
-        //     src: nextjs,
-        //     title: "NextJS",
-        //     style: 'shadow-green-400'
-        // },
         {
-            id: 6,
+            id: 5,
             src: tailwind,
             title: "Tailwind CSS",
             style: 'shadow-cyan-400'
         },
         {
+            id: 6,
+            src: node,
+            title: "Node.js",
+            style: 'shadow-green-400'
+        },
+        {
             id: 7,
-            src: github,
-            title: "Github",
-            style: 'shadow-gray-400'
+            src: express,
+            title: "Express.js",
+            style: 'shadow-green-400'
         },
         {
             id: 8,
+            src: mongo,
+            title: "MongoDB",
+            style: 'shadow-gray-400'
+        },
+        {
+            id: 9,
             src: framer,
             title: "Framer-Motion",
             style: 'shadow-indigo-400'

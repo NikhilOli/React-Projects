@@ -15,22 +15,22 @@ const Home = () => {
             <div className=' max-w-screen-lg h-full mx-auto flex flex-col justify-center items-center px-4 md:flex-row'>
                 <div className=' flex flex-col justify-center '>
                     <motion.h2
-                    variants={container(0)}
-                    initial="hidden"
-                    animate="visible" className='sm:mt-20 text-white md:w-fit text-4xl sm:text-7xl font-bold'>
-                        I'm a Frontend Developer.
+                        variants={container(0)}
+                        initial="hidden"
+                        animate="visible" className='sm:mt-20 text-white md:w-fit text-4xl sm:text-7xl font-bold'>
+                        I'm a Web Developer.
                     </motion.h2>
                     <motion.p
-                    variants={container(0.5)}
-                    initial="hidden"
-                    animate="visible" className='text-gray-500 py-4 max-w-md'>
-                        Hello! I'm Nikhil Oli, a Frontend Developer specializing in creating user-friendly web experiences. With proficiency in HTML, CSS, JavaScript, and ReactJS, I excel in transforming concepts into elegant and responsive applications. Let's collaborate to elevate your digital presence and captivate your audience.
+                        variants={container(0.5)}
+                        initial="hidden"
+                        animate="visible" className='text-gray-500 py-4 max-w-md'>
+                Greetings! I'm Nikhil Oli, a seasoned Web Developer with expertise spanning frontend technologies including HTML, CSS, JavaScript, and ReactJS, alongside backend proficiency in Node.js and Express.js. Let's collaborate to elevate your digital presence!
                     </motion.p>
                     <div>
                         <motion.button
-                        variants={container(1)}
-                        initial="hidden"
-                        animate="visible" className='group w-fit gap-1 my-2 cursor-pointer flex items-center text-white py-3 px-6 bg-gradient-to-r from-cyan-500 to-green-500 rounded-md'>
+                            variants={container(1)}
+                            initial="hidden"
+                            animate="visible" className='group w-fit gap-1 my-2 cursor-pointer flex items-center text-white py-3 px-6 bg-gradient-to-r from-cyan-500 to-green-500 rounded-md'>
                             Portfolio
                             <span className='group-hover:rotate-90 duration-300'>
                                 <FaArrowRight size={18} />
